@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-image:url("pik5.jpg");
+    background-size:cover;
+    color: white;
+    font-size:1.5em;
+    padding: 10px 0;
+    text-align: center;
+    
+    
+}
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Reem Kufi Fun';
+}
+
+header nav ul li {
+    margin: 20px 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    border:3px solid #eb631aff;
+    background-color:#eb631aff;
+    padding:5px;
+    border-radius:10px;
+    
+}
+
+header nav ul li a:hover{
+    background-color:white;
+    color:#2a8228ff;
+    
+}
+header h1 {
+    margin: 0;
+    font-family: 'Lalezar';
+    font-size:60px;
+    
+  
+}
+
+#titleyeah{
+    font-family: 'Reem Kufi Fun';
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2a8228ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+   font-weight:bold;
+    width: 100%;
+    font-family: 'Reem Kufi Fun';
+   
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    max-width:100%;
+    margin: 0 auto;
+    
+    
+}
+
+.gallery-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border:5px solid #2a8228ff;
+    
+}
+
+@media (max-width: 548px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+#mainpiks{
+    position:relative;
+  text-align:center;
+  
+}
+
+.pikss{
+    padding:0;
+    border:10px solid #eb631aff;
+    border-radius:10px;
+   
+}
+
+.home-intro{
+    position:relative;
+    border:10px solid #2a8228ff;
+    text-align:center;
+    font-family: 'Reem Kufi Fun';
+    
+    
+    
+}
+
+
+
+        .billboard-container {
+            position: relative;
+            width: 100%;
+            height: 50px; /* Adjust the height as needed */
+            overflow: hidden;
+            background-color: #eb631aff; /* Background color for the billboard */
+            color: #fff; /* Text color */
+            font-family: 'Reem Kufi Fun';
+            font-size: 24px; /* Adjust the font size as needed */
+            line-height: 50px; /* Match the height for vertical centering */
+        }
+
+        .billboard {
+            display: flex;
+            width: 200%; /* Double the width to allow scrolling effect */
+            animation: scroll 8s linear infinite;
+        }
+
+        .billboard div {
+            width: 50%; /* Each text block takes half of the width of the billboard */
+            text-align: center;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+
+h2{
+    text-align:center;
+}
+
+
+.logoA:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+    
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.zoom {
+  padding: 10px;
+  background-color: #2a8228ff;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
